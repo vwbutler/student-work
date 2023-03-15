@@ -1,0 +1,97 @@
+/* Color Theme Swatches in Hex */
+/* .dreamy-cloud-bunny-1-hex { color: #143F59; }
+.dreamy-cloud-bunny-2-hex { color: #2B838C; }
+.dreamy-cloud-bunny-3-hex { color: #41A6A6; }
+.dreamy-cloud-bunny-4-hex { color: #BEBFB4; }
+.dreamy-cloud-bunny-5-hex { color: #592B27; } */
+
+:root {
+  --d-blue: #143F59;
+  --m-blue: #2b838c;
+  --l-blue: #41A6A6;
+  --tan: #bebfb4;
+  --brown: #592b27;
+}
+
+/* this is targeting an element by its tag name*/
+body {
+  background-color: var(--d-blue);
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.topnav a {
+  float: right;
+  color: var(--m-blue);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+}
+
+.responsive image {
+  /* width: 100%; */
+  max-height: 4px;
+  /* height: auto; */
+}
+
+li {
+  float: lrightft;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: var(--m-blue);
+}
+
+
+
+
+/* this is targeting an element by the class. can target multiple elements at once */
+.box {
+  width: 40px;
+  height: 40px;
+  background-color: #4f3a36;
+}
+
+/* this is targeting an elment by the id. id should be unique to that elemnt.
+ only one lement targeted. should NOT be used with css. this will overwrite 
+ any class if they're targeting the same property */
+#inner-box {
+  width: 20px;
+  height: 20px;
+  border: #3c9ca2 1px solid;
+}
+
+container {
+  display: flex; 
+  background-color: var(--tan);
+   /* or inline-flex */
+}
+
+.container {
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+} */
+
+
+<div style="display: flex;">
+<img src="assets/images/image1.jpg" alt="bunny in the cloud" style="flex: 2;" />
+<img src="assets/images/image1.jpg" alt="bunny in the cloud" style="flex: 1;" />
+<img src="assets/images/image1.jpg" alt="bunny in the cloud" style="flex: 1;" />
+</div>
+
+/* git add . */
+/* git commit -m "your commit message here" */
+/* git push or git push origin main*/
