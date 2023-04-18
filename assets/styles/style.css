@@ -46,7 +46,7 @@ header {
   align-content: center;
   justify-content: flex-start;
   align-items: center;
-  background-color: var(--tan);
+  /* background-color: var(--tan); */
 }
 
 .container-project2 {
@@ -56,7 +56,7 @@ header {
   align-content: center;
   justify-content: flex-end;
   align-items: center;
-  background-color: var(--l-blue);
+  /* background-color: var(--l-blue); */
 }
 
 .container-test {
@@ -64,7 +64,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-color: var(--l-blue);
+  /* background-color: var(--l-blue); */
 }
 
 h1 {
@@ -96,15 +96,9 @@ nav a {
 img.profile {
   float: left;
   margin-right: 10px;
-  border-radius: 50%;
-  padding: 6px;
+  border-radius: 30%;
+  padding: 20px;
   max-width: 100px;
-}
-
-.bottom-left {
-  position: center;
-  /* transform: translate(-50%, -50%); */
-  color: (var(--glossy-white));
 }
 
 .flex-row {
@@ -116,20 +110,43 @@ img.profile {
   padding: auto;
 }
 
+.flex-projects {
+  display: flex;
+  flex: 12;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  /* border-color: #592b27; */
+  /* border-style: solid; */
+}
+
 .flex-row2 {
   display: flex;
   /* flex: 2; */
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: left; */
   align-items: center;
   padding: auto;
-  border-color: var(--d-blue);
-  border-style: groove;
+  /* border-color: var(--d-blue);
+  border-style: groove; */
   font-size: smaller;
+  min-height: 175px;
 }
 
-.flex-row3 {
+.flex-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+/* .flex-row3 {
   display: flex;
   flex: 12;
   flex-direction: column;
@@ -139,7 +156,7 @@ img.profile {
   padding: auto;
   border-color: #592b27;
   border-style: solid;
-}
+} */
 
 .flex-row-big {
   display: flex;
@@ -157,6 +174,22 @@ img.project-big {
   border-radius: 10%;
   padding: 6px;
   /* max-width: 100px; */
+}
+
+img.project {
+  float: center;
+  align-items: center;
+  margin-right: 10px;
+  border-radius: 30%;
+  padding: 6px;
+  max-width: 175px;
+  max-height: 175px;
+}
+
+.bottom-left {
+  position: center;
+  align-items: center;
+  color: (var(--glossy-white));
 }
 
 .footer {
