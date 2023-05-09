@@ -51,6 +51,17 @@ h1 {
   align-self: auto;
 }
 
+h4 {
+  font-size: 1em;
+  margin-block-start: 5 em;
+  margin-block-end: 5 em;
+  margin-inline-start: 3em;
+  margin-inline-end: 3em;
+  font-weight: bold;
+  align-self: center;
+  justify-content: center;
+}
+
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -70,10 +81,11 @@ nav a {
 
 .plain-link {
   color: var(--glossy-white);
-  font-weight: bold;
+  font-weight: normal;
   display: inline;
   text-decoration: none;
   align-items: flex-start;
+  font-size: small;
 }
 
 img.profile {
@@ -129,6 +141,7 @@ img.profile {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
+  border: 1.5 em;
 }
 
 img.project-big {
